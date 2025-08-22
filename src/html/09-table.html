@@ -17,54 +17,54 @@
         border: 1px solid currentColor;
       }
     </style>
-    <table>
-      <tr>
-        <th id="name">국어</th>
-        <th id="ko">영어</th>
-        <th id="en">이름</th>
+    <table role="table" aria-label="성적표">
+      <tr role="row">
+        <th id="name" role="columnheader">국어</th>
+        <th id="ko" role="columnheader">영어</th>
+        <th id="en" role="columnheader">이름</th>
       </tr>
-      <tr>
-        <th id="hong">홍길동</th>
-        <td headers="hong ko">90</td>
-        <td headers="hong en">80</td>
+      <tr role="row">
+        <th id="hong" role="rowheader">홍길동</th>
+        <td headers="hong ko" role="cell">90</td>
+        <td headers="hong en" role="cell">80</td>
       </tr>
-      <tr>
-        <th id="lee">이영희</th>
-        <td headers="lee ko">70</td>
-        <td headers="lee en">100</td>
+      <tr role="row">
+        <th id="lee" role="rowheader">이영희</th>
+        <td headers="lee ko" role="cell">70</td>
+        <td headers="lee en" role="cell">100</td>
       </tr>
-      <tr>
-        <th id="ave">평균</th>
-        <td headers="ave ko">80</td>
-        <td headers="ave en">90</td>
+      <tr role="row">
+        <th id="ave" role="rowheader">평균</th>
+        <td headers="ave ko" role="cell">80</td>
+        <td headers="ave en" role="cell">90</td>
       </tr>
     </table>
     <hr />
 
-    <table>
-      <tr>
-        <th>영어</th>
-        <td>국어</td>
-        <td>이름</td>
+    <table role="table" aria-label="성적표 요약">
+      <tr role="row">
+        <th role="columnheader">영어</th>
+        <td role="columnheader">국어</td>
+        <td role="columnheader">이름</td>
       </tr>
-      <tr>
-        <th scope="row">홍길동</th>
-        <td>90</td>
-        <td>80</td>
+      <tr role="row">
+        <th scope="row" role="rowheader">홍길동</th>
+        <td role="cell">90</td>
+        <td role="cell">80</td>
       </tr>
-      <tr>
-        <th scope="row">이영희</th>
-        <td>70</td>
-        <td>100</td>
+      <tr role="row">
+        <th scope="row" role="rowheader">이영희</th>
+        <td role="cell">70</td>
+        <td role="cell">100</td>
       </tr>
-      <tr>
-        <th scope="row">평균</th>
-        <td>80</td>
-        <td>90</td>
+      <tr role="row">
+        <th scope="row" role="rowheader">평균</th>
+        <td role="cell">80</td>
+        <td role="cell">90</td>
       </tr>
-      <tr>
-        <th scope="row">평균 합계</th>
-        <td colspan="2">170</td>
+      <tr role="row">
+        <th scope="row" role="rowheader">평균 합계</th>
+        <td colspan="2" role="cell">170</td>
       </tr>
     </table>
   </body>
