@@ -10,12 +10,21 @@
     <link rel="stylesheet" href="/public/font/suit/SUIT-Variable.css" />
     <link rel="stylesheet" href="/src/common/index.css" />
     <link rel="stylesheet" href="/src/common/main.css" />
+
+    <base href="/src/html/" target="_blank" />
+    <!-- 상대경로의 베이스 (기준)이 /src/html 이 되는것! -->
+    <!-- 깃헙은 절대경로를 지원 안함. 깃헙 같은 경우는 상대경로 사용! -->
+    <h2>CSS</h2>
+    <ul>
+      <li><a href="/src/css/01-css-basic.html">CSS 기초</a></li>
+    </ul>
   </head>
   <body>
     <h1>HTML/CSS</h1>
     <h2>HTML</h2>
     <ul>
-      <li><a href="/src/html/01-basic-structure.html">HTML 기본 구조</a></li>
+      <!-- 01-basic-structure.html 파일은 <base> 요소의 경로를 기준으로 -->
+      <li><a href="./01-basic-structure.html">HTML 기본 구조</a></li>
       <li><a href="/src/html/02-heading-paragraph.html">제목과 단락</a></li>
       <li><a href="/src/html/03-image-figure.html">이미지와 피규어</a></li>
       <li><a href="/src/html/04-anchor.html#dummy">하이퍼 링크</a></li>
@@ -37,6 +46,7 @@
       <li><a href="/src/html/20-form-select-textarea.html">form(select, textarea) 요소</a></li>
       <li><a href="/src/html/21-dialog-popover.html">dialog 요소</a></li>
       <li><a href="/src/html/22-details-summary.html">details, summary 요소</a></li>
+      <li><a href="/src/html/23-script.html">script요소</a></li>
     </ul>
   </body>
 </html>
