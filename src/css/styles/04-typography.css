@@ -23,9 +23,57 @@ h1 {
   font-size: 5vw;
 }
 
-
 /* font-size: 1.5em --> 이렇게 하면 20 * 1.5 *1.5 해서 렌더링 되는 글자 크기는 45px임 
 /* em 단위도 있고 rem 단위 라는 것도 있음 */
 
+/* 글꼴 스타일 */
+h1 {
+  font-style: italic;
+}
 
-.like
+/* 줄 높이 */
+
+.wrapper blockquote {
+  font-size: 15px;
+  line-height: 1;
+}
+/* line-height에서 1em쓰면 글씨 겹침 */
+
+.like {
+  font-size: 30px;
+}
+
+/* line-height 에서 1은 1em 이나 100% 과 다름 */
+
+/* 자간 조정하기 */
+
+h1 {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.6;
+}
+
+/* 정렬 */
+
+.bootcamp {
+  height: 200px;
+  border: 1px solid red;
+  padding: 20px;
+  background-color: var(--yellow);
+  text-align: center;
+  line-height: 160px;
+  /* align-content: center; */
+}
+
+/* 글자 그림자 */
+.bootcamp {
+  text-shadow:
+    1px 1px 2px red,
+    2px 2px 2px orange,
+    3px 3px 2px yellow,
+    4px 4px 2px green,
+    5px 5px 2px blue,
+    6px 6px 2px darkblue,
+    7px 7px 2px purple;
+}
