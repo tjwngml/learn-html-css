@@ -1,0 +1,31 @@
+/* 본문의 기본 여백 설정 */
+
+body {
+  margin: 20px;
+}
+
+/* 상속 */
+
+a {
+  color: inherit;
+}
+
+.wrapper {
+  color: purple;
+  border: 1px solid green;
+}
+
+/* 겹침 */
+/* 가중치 21 */
+/* h1뒤에서 등장하는 요소 중에서 뒤 요소를 찾아라 */
+body a + h1 + #coding.wrapper p.like {
+  color: blue;
+}
+
+/* 가중치 120 */
+a + h1 + div#coding.wrapper p.like {
+  color: red;
+}
+
+/* 이러면 결국 파란색이 가중치가 높아져 파란색이 적용됨! */
+/* !important; 쓰면 제일 우선으로 적용됨. 그러나 막 남용하면 좀...; */
