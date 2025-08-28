@@ -1,0 +1,31 @@
+body {
+  margin: 20px;
+}
+
+/* 글꼴 */
+
+h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+  margin-bottom: 10px;
+}
+
+/* 글자 크기 */
+.wrapper {
+  font-size: 20px;
+}
+
+.wrapper blockquote {
+  font-size: 1.5em;
+}
+
+.like {
+  font-size: 5vw;
+}
+
+
+/* font-size: 1.5em --> 이렇게 하면 20 * 1.5 *1.5 해서 렌더링 되는 글자 크기는 45px임 
+/* em 단위도 있고 rem 단위 라는 것도 있음 */
+
+
+.like
