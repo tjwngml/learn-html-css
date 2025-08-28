@@ -4,12 +4,136 @@
 }
 
 /* 요소 선택자 */
+/* 마진은 바깥쪽 여백을 주는것, 패딩은 안쪽 여백. */
+body {
+  margin: 20px;
+}
+
 a {
   text-decoration: line-through;
 }
 
-/* 클래스 선택자 */
-
-.like {
-  background-color: yellow;
+p {
+  border: 2px solid blue;
+  color: gray;
 }
+
+/* 클래스 선택자 */
+/* theme에 있는 파스텔 옐로우 */
+.like {
+  background-color: var(--yellow);
+  border: 2px dashed green;
+}
+
+p {
+  color: black;
+}
+
+/* 아이디 선택자 */
+
+#lion {
+  background-color: var(--orage);
+}
+
+/* 클래스 선택자를 여러 개 조합하더라도 아이디 선택자의 스타일을 재지정 할 수 없다. */
+.a.b.c.d.e.f.g.h.i.j.like {
+  background-color: aqua;
+}
+
+/* 속성 선택자 */
+a[href^='https'] {
+  color: green;
+}
+
+/* 자손 결합자 */
+/* 부트캠프 안에서 피의 스타일만 적용 */
+.bootcamp p {
+  color: gray;
+}
+
+/* 자식 결합자 */
+.bootcamp > blockquote > p {
+  padding: 10px;
+}
+
+/* 선택자 그룹화 */
+a,
+h1,
+#lion {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* 가상 요소 선택자 */
+h1::befor {
+  content: '멋사';
+}
+h1::after {
+  content: '15기';
+}
+
+p::before {
+  content: '0pen';
+  font-size: 36px;
+  color: red;
+}
+
+/* 첫 글자만 설정 */
+p::first-letter {
+  font-size: 80px;
+  font-weight: 900;
+}
+
+/* 드래그 했을 때 보임! */
+p::selection {
+  background-color: darkblue;
+  color: white;
+}
+
+/* 가상 클래스 */
+/* hover는 마우스 올리면 바뀜
+hover는 상태를 선택하는 것임*/
+h1:hover {
+  background-color: pink;
+}
+
+h1:focus {
+  border: 2px dashed black;
+}
+
+a:link {
+  color: purple;
+}
+
+a:visited {
+  color: gray;
+}
+/*  방문한 적 있는 곳은 visited 로 회색으로 표시한다 */
+
+/* 주소표시줄에 있을때 탭 키 하면 포커스링 잡힘
+오프셋으로 포커스링 10px 만큼 좀 더 넓게 잡았음 */
+a:focus {
+  outline: 2px solid red;
+  outline-offset: 10px;
+}
+
+a:hover
+a:focus
+a:active {
+  color: red;
+}
+
+
+/* 자손 선택자 방식, p 중에 첫번째 것을 선택하겠다. */
+.frontend p:first-child{
+  font-size: 16px;
+
+}
+
+/* 개발은 원래 0부터 시작하지만 프론트엔드는 1부터 시작 */
+.frontend p:nth-child(2){
+  font-size : 20px;
+  font-weight: 700;
+
+
+}
+
