@@ -1,0 +1,10 @@
+/* 배경 스타일링 */
+body {
+  background-color: #ffc;
+  background-image: url('/src/assets/images/sun.png'), url('/src/assets/images/cloud.png');
+  background-repeat: no-repeat;
+  background-size:
+    100px 100px,
+    200px 150px;
+  background-position: 50% 30%;
+}
