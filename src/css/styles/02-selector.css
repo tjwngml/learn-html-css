@@ -116,24 +116,17 @@ a:focus {
   outline-offset: 10px;
 }
 
-a:hover
-a:focus
-a:active {
+a:hover a:focus a:active {
   color: red;
 }
 
-
 /* 자손 선택자 방식, p 중에 첫번째 것을 선택하겠다. */
-.frontend p:first-child{
+.frontend p:first-child {
   font-size: 16px;
-
 }
 
 /* 개발은 원래 0부터 시작하지만 프론트엔드는 1부터 시작 */
-.frontend p:nth-child(2){
-  font-size : 20px;
+.frontend p:nth-child(2) {
+  font-size: 20px;
   font-weight: 700;
-
-
 }
-
