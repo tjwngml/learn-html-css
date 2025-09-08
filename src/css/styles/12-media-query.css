@@ -1,0 +1,21 @@
+body {
+  margin: 20px;
+}
+
+/* body 배경색상 */
+
+body {
+  background: yellow;
+}
+
+/* body 배경색상 */
+/* body 배경색상 */
+body {
+  background: yellow;
+}
+
+@media (min-width: 600px) {
+  body {
+    background: pink;
+  }
+}
